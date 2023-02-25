@@ -38,7 +38,7 @@ async def start():
     # ccy = list()
     # ccy.append(sys.argv[1])     #Мало брати вказані валюти для обробки, функціонал не дороблений
     # archive_days = int(sys.argv[2])
-    archive_days = int(sys.argv[2])
+    archive_days = int(sys.argv[1])
     ccy = ["EUR", "USD"]
     if archive_days <= 10:
         for i in range(archive_days):
