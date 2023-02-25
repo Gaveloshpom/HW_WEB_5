@@ -43,7 +43,7 @@ async def start():
     if archive_days <= 10:
         result = []
         for i in range(archive_days):
-            day = datetime.datetime.today()-datetime.timedelta(int(i))
+            day = datetime.datetime.today() - datetime.timedelta(i)
             r = asyncio.create_task(main(ccy, day.strftime("%d.%m.%Y")))
             res.append(r)
         result.append(await asyncio.gather(*res))
